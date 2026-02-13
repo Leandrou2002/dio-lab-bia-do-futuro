@@ -68,7 +68,7 @@ Os dados são formatados em texto estruturado antes de serem enviados ao modelo,
 ## Exemplo de Contexto Montado
 
 > Mostre um exemplo de como os dados são formatados para o agente.
-
+```
 Dados do Cliente:
 - Nome: João Silva
 - Perfil: Moderado
@@ -83,3 +83,4 @@ Dados do Cliente:
 
 Pergunta do usuário:
 "Quanto preciso investir por mês para atingir R$ 50.000 em 3 anos?"
+```
