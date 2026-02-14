@@ -1,149 +1,251 @@
-# 🤖 Agente Financeiro Inteligente com IA Generativa
+# FIN — Finanças Inteligentes
 
-## Contexto
+Assistente virtual de educação financeira e cálculos financeiros desenvolvido com **Python**, **Streamlit** e modelos de linguagem executados localmente via **Ollama**.
 
-Os assistentes virtuais no setor financeiro estão evoluindo de simples chatbots reativos para **agentes inteligentes e proativos**. Neste desafio, você vai idealizar e prototipar um agente financeiro que utiliza IA Generativa para:
-
-- **Antecipar necessidades** ao invés de apenas responder perguntas
-- **Personalizar** sugestões com base no contexto de cada cliente
-- **Cocriar soluções** financeiras de forma consultiva
-- **Garantir segurança** e confiabilidade nas respostas (anti-alucinação)
-
-> [!TIP]
-> Na pasta [`examples/`](./examples/) você encontra referências de implementação para cada etapa deste desafio.
+O FIN foi projetado para ajudar usuários a compreender conceitos financeiros e realizar cálculos com precisão matemática, mantendo transparência, responsabilidade e boas práticas no uso de Inteligência Artificial.
 
 ---
 
-## O Que Você Deve Entregar
+## 📌 Visão Geral
 
-### 1. Documentação do Agente
+O FIN atua como um assistente virtual capaz de:
 
-Defina **o que** seu agente faz e **como** ele funciona:
+- Explicar conceitos financeiros de forma clara  
+- Realizar cálculos financeiros com precisão  
+- Simular cenários financeiros  
+- Contextualizar respostas com dados estruturados  
+- Manter comunicação acolhedora e profissional  
+- Evitar recomendações de investimento ou previsões de mercado  
 
-- **Caso de Uso:** Qual problema financeiro ele resolve? (ex: consultoria de investimentos, planejamento de metas, alertas de gastos)
-- **Persona e Tom de Voz:** Como o agente se comporta e se comunica?
-- **Arquitetura:** Fluxo de dados e integração com a base de conhecimento
-- **Segurança:** Como evitar alucinações e garantir respostas confiáveis?
-
-📄 **Template:** [`docs/01-documentacao-agente.md`](./docs/01-documentacao-agente.md)
-
----
-
-### 2. Base de Conhecimento
-
-Utilize os **dados mockados** disponíveis na pasta [`data/`](./data/) para alimentar seu agente:
-
-| Arquivo | Formato | Descrição |
-|---------|---------|-----------|
-| `transacoes.csv` | CSV | Histórico de transações do cliente |
-| `historico_atendimento.csv` | CSV | Histórico de atendimentos anteriores |
-| `perfil_investidor.json` | JSON | Perfil e preferências do cliente |
-| `produtos_financeiros.json` | JSON | Produtos e serviços disponíveis |
-
-Você pode adaptar ou expandir esses dados conforme seu caso de uso.
-
-📄 **Template:** [`docs/02-base-conhecimento.md`](./docs/02-base-conhecimento.md)
+O sistema utiliza um modelo de linguagem executado localmente, garantindo privacidade e independência de serviços pagos.
 
 ---
 
-### 3. Prompts do Agente
+## 🎯 Objetivo do Projeto
 
-Documente os prompts que definem o comportamento do seu agente:
-
-- **System Prompt:** Instruções gerais de comportamento e restrições
-- **Exemplos de Interação:** Cenários de uso com entrada e saída esperada
-- **Tratamento de Edge Cases:** Como o agente lida com situações limite
-
-📄 **Template:** [`docs/03-prompts.md`](./docs/03-prompts.md)
+O objetivo do FIN é promover **educação financeira acessível** por meio de inteligência artificial responsável, auxiliando usuários a compreender melhor suas finanças e tomar decisões mais conscientes.
 
 ---
 
-### 4. Aplicação Funcional
+## 🧠 Funcionalidades
 
-Desenvolva um **protótipo funcional** do seu agente:
+### Educação Financeira
 
-- Chatbot interativo (sugestão: Streamlit, Gradio ou similar)
-- Integração com LLM (via API ou modelo local)
-- Conexão com a base de conhecimento
+- Explicação de conceitos financeiros  
+- Diferença entre renda fixa e variável  
+- Planejamento financeiro básico  
 
-📁 **Pasta:** [`src/`](./src/)
+### Cálculos Financeiros
 
----
+- Juros simples  
+- Juros compostos  
+- Valor futuro (FV)  
+- Valor presente (PV)  
+- Simulação com aportes  
 
-### 5. Avaliação e Métricas
+### Contextualização Inteligente
 
-Descreva como você avalia a qualidade do seu agente:
+- Perfil do investidor  
+- Histórico de transações  
+- Produtos financeiros disponíveis  
 
-**Métricas Sugeridas:**
-- Precisão/assertividade das respostas
-- Taxa de respostas seguras (sem alucinações)
-- Coerência com o perfil do cliente
+### Segurança e Ética
 
-📄 **Template:** [`docs/04-metricas.md`](./docs/04-metricas.md)
-
----
-
-### 6. Pitch
-
-Grave um **pitch de 3 minutos** (estilo elevador) apresentando:
-
-- Qual problema seu agente resolve?
-- Como ele funciona na prática?
-- Por que essa solução é inovadora?
-
-📄 **Template:** [`docs/05-pitch.md`](./docs/05-pitch.md)
+- Não fornece recomendações de investimento  
+- Não faz previsões de mercado  
+- Não inventa dados  
+- Protege dados sensíveis  
 
 ---
 
-## Ferramentas Sugeridas
-
-Todas as ferramentas abaixo possuem versões gratuitas:
-
-| Categoria | Ferramentas |
-|-----------|-------------|
-| **LLMs** | [ChatGPT](https://chat.openai.com/), [Copilot](https://copilot.microsoft.com/), [Gemini](https://gemini.google.com/), [Claude](https://claude.ai/), [Ollama](https://ollama.ai/) |
-| **Desenvolvimento** | [Streamlit](https://streamlit.io/), [Gradio](https://www.gradio.app/), [Google Colab](https://colab.research.google.com/) |
-| **Orquestração** | [LangChain](https://www.langchain.com/), [LangFlow](https://www.langflow.org/), [CrewAI](https://www.crewai.com/) |
-| **Diagramas** | [Mermaid](https://mermaid.js.org/), [Draw.io](https://app.diagrams.net/), [Excalidraw](https://excalidraw.com/) |
-
----
-
-## Estrutura do Repositório
+## 🏗 Arquitetura do Sistema
 
 ```
-📁 lab-agente-financeiro/
+Usuário
+↓
+Interface Web (Streamlit)
+↓
+Aplicação Python
+↓
+Modelo de Linguagem (Ollama)
+↓
+Contexto + Dados Estruturados (JSON / CSV)
+```
+---
+
+## 🧰 Tecnologias Utilizadas
+
+- Python 3.10+  
+- Streamlit  
+- Pandans  
+- Requests  
+- Ollama  
+- Modelo LLM local (ex: llama3.1:8b)  
+
+---
+## 📂 Estrutura do Projeto
+
+```
+FIN/
 │
-├── 📄 README.md
+├── data/
+│ ├── perfil_investidor.json
+│ ├── produtos_financeiros.json
+│ ├── transacoes.csv
+│ └── historico_atendimento.csv
 │
-├── 📁 data/                          # Dados mockados para o agente
-│   ├── historico_atendimento.csv     # Histórico de atendimentos (CSV)
-│   ├── perfil_investidor.json        # Perfil do cliente (JSON)
-│   ├── produtos_financeiros.json     # Produtos disponíveis (JSON)
-│   └── transacoes.csv                # Histórico de transações (CSV)
+├── docs/
+│ └── documentação do agente
 │
-├── 📁 docs/                          # Documentação do projeto
-│   ├── 01-documentacao-agente.md     # Caso de uso e arquitetura
-│   ├── 02-base-conhecimento.md       # Estratégia de dados
-│   ├── 03-prompts.md                 # Engenharia de prompts
-│   ├── 04-metricas.md                # Avaliação e métricas
-│   └── 05-pitch.md                   # Roteiro do pitch
+├── src/
+│ └── app.py
 │
-├── 📁 src/                           # Código da aplicação
-│   └── app.py                        # (exemplo de estrutura)
-│
-├── 📁 assets/                        # Imagens e diagramas
-│   └── ...
-│
-└── 📁 examples/                      # Referências e exemplos
-    └── README.md
+└── README.md
 ```
 
 ---
 
-## Dicas Finais
+## ⚙️ Pré-requisitos
 
-1. **Comece pelo prompt:** Um bom system prompt é a base de um agente eficaz
-2. **Use os dados mockados:** Eles garantem consistência e evitam problemas com dados sensíveis
-3. **Foque na segurança:** No setor financeiro, evitar alucinações é crítico
-4. **Teste cenários reais:** Simule perguntas que um cliente faria de verdade
-5. **Seja direto no pitch:** 3 minutos passam rápido, vá ao ponto
+Antes de iniciar, você precisa instalar:
+
+### 1️⃣ Python
+
+Versão recomendada:
+```
+Python 3.10 ou superior
+```
+
+Verifique:
+
+```
+python --version
+```
+
+### 2️⃣ Ollama (obrigatório)
+
+O FIN utiliza modelos locais executados via Ollama.
+
+Baixe e instale:
+
+👉 https://ollama.com/download
+
+ ## 🤖 Baixando o Modelo de IA
+ 
+Depois de instalar o Ollama, você precisa baixar o modelo utilizado pelo agente.
+
+Modelo recomendado:
+
+```
+llama3.1:8b
+```
+
+Para baixar o modelo rode no console:
+```
+ollama pull llama3.1:8b
+```
+
+Este modelo oferece:
+
+- ótima qualidade
+
+- respostas rápidas
+
+- baixo consumo de memória
+
+- estabilidade para aplicações locais
+
+## ▶️ Como Executar o Projeto
+
+### 1️⃣ Instale as dependências
+
+Rode no console:
+
+```
+pip install streamlit pandas requests
+```
+### 2️⃣ Inicie o Ollama
+
+Certifique-se que o Ollama está rodando.
+
+### 3️⃣ Execute a aplicação
+
+Dentro da pasta do projeto rode no console:
+
+```
+python -m streamlit run src/app.py
+```
+
+O navegador abrirá automaticamente.
+
+### 🔄 Alterando o Modelo de IA
+
+O modelo utilizado pode ser alterado diretamente no código.
+
+Abra:
+```
+src/app.py
+```
+Localize a variável:
+
+```
+MODELO = "llama3.1:8b"
+```
+Você pode alterar para outros modelos compatíveis com o Ollama, como:
+```
+MODELO = "mistral"
+MODELO = "phi3"
+MODELO = "gpt-oss:7b"
+```
+Após alterar, salve o arquivo, faça o processo de pull do modelo e reinicie o Streamlit.
+
+## 📊 Dados Utilizados
+
+O sistema utiliza arquivos locais para contextualização:
+
+| Arquivo                     | Função                     |
+|----------------------------|----------------------------|
+| perfil_investidor.json     | Informações do cliente     |
+| transacoes.csv             | Histórico financeiro       |
+| historico_atendimento.csv  | Interações anteriores      |
+| produtos_financeiros.json  | Contexto educacional       |
+
+## 🔐 Segurança e Privacidade
+
+O FIN foi projetado com princípios de uso responsável da IA:
+
+- Não solicita senhas ou dados bancários
+
+- Não compartilha dados sensíveis
+
+- Processa apenas informações fornecidas pelo usuário
+
+- Executa o modelo localmente (sem envio de dados externos)
+
+## ⚠️ Limitações
+
+- Não realiza consultoria financeira
+
+- Não recomenda investimentos
+
+- Não acessa dados em tempo real
+
+- Não substitui orientação profissional
+
+## 🚀 Possíveis Melhorias Futuras
+
+- [ ] Histórico persistente em banco de dados
+
+- [ ] Deploy em ambiente corporativo
+
+- [ ] Dashboard financeiro visual
+
+- [ ] Integração com APIs financeiras
+
+- [ ] Autenticação de usuários
+
+## 👨‍💻 Autor
+
+Desenvolvido por **Leandro de Oliveira**
+
+Bootcamp IA e Dados — DIO & Bradesco
